@@ -1,0 +1,67 @@
+/************************************************
+// General Settings
+************************************************/
+
+/* Browser Reset */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+/* Color Palette */
+
+:root {
+    --bg-color: #0C3442;
+    --bg-simplysq: #177EA6;
+    --bg-fizzsq: #1AD099;
+    --bg--buzzsq: #FFCB66;
+    --bg--fizzbuzzsq: #EC3F64;
+}
+
+/************************************************
+// Body
+************************************************/
+
+body {
+    background-color: var(--bg-color);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.container {
+    margin: auto;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+height: 5rem;
+width: 5rem;
+background-color: var(--bg-simplysq);
+border: 1px solid black;
+margin: 0.5rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.fizz {
+    background-color: var(--bg-fizzsq);
+}
+
+.buzz {
+    background-color: var(--bg--buzzsq);
+}
+
+.fizzbuzz {
+    background-color: var(--bg--fizzbuzzsq);
+}
